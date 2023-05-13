@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: aqua;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* Encabezado */
+header{
+    width: 100%;
+    height: 600px;
+    background: #92090942;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.501)1), #15050557, url(../img/fondo.comentario.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, hsla(190, 94%, 51%, 0.501), #B2FEFA), url(../img/fondo.comentario.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: rgb(8, 20, 252);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: rgb(0, 0, 255);
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+.wave{
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+}
+/* Nuestro Producto */
+.contenedor-fondo{
+    background-color: #000000;
+}
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-about-us{
+    width: 48%;
+}
+.contenedor-sobre .contenido-textos{
+    width: 48%;
+}.contenido-textos h3{
+    color: #B2FEFA;
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: #f32f15;
+    color: antiquewhite;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgb(136, 255, 0);
+    margin-right: 5px;
+}
+.contenido-textos p{
+    color: #0527e7;
+    padding: 0px 0px 10px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/* portafolio */
+.portafolio{
+    background: url(../img/footer.jpg);
+    background: url(../img/inicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  background-size: cover;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 20px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor:pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.596);
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /*transform: scale(0);*/
+    background: hsl(0, 0%, 0%);
+    transition: transforn .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.9s ease-in-out;
+}
+.hover-galeria img{
+    width: 100px;
+}
+.hover-galeria p{
+    color: aliceblue;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
+}
+/* Que dicen nuestros clientes */
+.clientes-contenedor{
+    background-color: #000000;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: blueviolet;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    display: block;
+    margin: center;
+
+}
+.cards .card > .contenido-textos-card{
+    width: 60%;
+    color: #fff;
+}
+.cards .card > .contenido-textos-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+/* nuestro servicios */
+.abaut-services{
+    background: url(../img/footer.jpg);
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  background-size: cover;
+}
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+       
+}
+.servicio-ind img{
+    background: #0000004d;
+    width: 200px ;
+    height: 200px;
+    border-radius: 50%;
+}
+.servicio-ind h3{
+    color: #000000;
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+.uno{
+    color: #ffffff;
+    background-color: #8d11daa1;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 9px;
+}
+.dos{
+    color: #fff;
+    background-color: #a111daa5;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 9px;
+}
+.tes{
+    color: #fff;
+    background-color: #b511da96;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 9px;
+}
+.contrato{
+    margin: -50px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* Pie de Pagina */
+footer{
+    background: #333333;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dd18188c, #33333380),url(../img/footer.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dd18188c, #33333380),url(../img/footer.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  background-size: cover;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(215, 18, 18);
+}
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color: #da1111;
+    border-bottom:  3px solid rgb(213, 207, 218);
+    padding-bottom:  5px;
+    margin-bottom: 20px;
+}
+.content-foo p{
+    color: #f4f5f3;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: aqua;
+}
+@media screen and (max-width:900px){
+    header{
+        background-position:center ;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    .imagen-about-us{
+        width: 90%;
+    }
+    /* Portafolio */
+    .imagen-port{
+        width: 44%;
+    }
+    /*Que dicen nuestro clientes*/
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+    /* servicios */
+    .servicion-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicion-ind{
+        width: 100%;
+        text-align: center;
+    }
+    .servicion-ind:nth-child(1), .servicion-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+    .servicion-ind img{
+        width: 90%;
+    }
+}
+@media screen and (max-width:500px){ 
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    nav > a{
+        margin-right: 5px;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header h2{
+        font-size: 20px;
+    }
+    /*Abaut Us*/
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 90%;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+    /*Galeria*/
+    .imagen-port{
+        width: 95%;
+
+    }
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+    /*footer*/
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color: #a6be98;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+    }
+    .titulo-final{
+        font-size: 20px;
+    }
+}
